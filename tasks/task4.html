@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Задача 4</h1>
+
+    <h2>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</h2>
+
+    <script>
+        // вводим значение переменной с экрана
+        let lenghtInCm = parseFloat(prompt('Введите длину в СМ'))
+
+        // находим значения выражений
+        let lenghtInMeters = lenghtInCm / 100
+
+        let lenghtInKilometers = lenghtInMeters / 1000
+
+        // выводим значения переменных на экран
+        document.write(`<h3>Длина в метрах: ${lenghtInMeters.toFixed(3)}</h3>`)
+
+        document.write(`\n <h3>Длина в километрах: ${lenghtInKilometers}</h3>`)
+    </script>
+
+</body>
+
+</html>
