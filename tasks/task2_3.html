@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let itemPrice1 = parseFloat(prompt('Введите стоимость товара №1, $:', '0.0'))
+        let itemPrice2 = parseFloat(prompt('Введите стоимость товара №2, $:', '0.0'))
+
+
+        let itemQuantity1 = parseInt(prompt('Введите кол-во товара №1, шт.:', '0'))
+        let itemQuantity2 = parseInt(prompt('Введите кол-во товара №2, шт.:', '0'))
+
+        let itemCost1 = itemPrice1 * itemQuantity1
+        let itemCost2 = itemPrice2 * itemQuantity2
+        let totalCost = itemCost1 + itemCost2
+
+        document.write(`<h3>Общая стоимость товаров №1, $: ${itemCost1.toFixed(2)}</h3>`)
+        document.write(`\n <h3>Общая стоимость товаров №2, $: ${itemCost2.toFixed(2)}</h3>`)
+        document.write(`\n <h3>Общая стоимость товаров №1 и №2, $: ${totalCost.toFixed(2)}</h3>`)
+    </script>
+</body>
+
+</html>

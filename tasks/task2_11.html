@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let hours = 12
+        let minutes = 12
+        let seconds = 12
+
+        let enterSeconds = parseInt(prompt('Введите кол-во секунд:', '0'))
+
+        let resultSeconds = (hours * 3600 + minutes * 60 + seconds) + enterSeconds
+
+        let resultMinutes = Math.floor(resultSeconds / 60)
+
+        let partSeconds = resultSeconds % 60
+
+        document.write(`<p><b>Через введённое вами кол-во секунд будет общ. кол-во секунд:<b> ${resultSeconds}</p>`)
+        document.write(`<p><b>Через введённое вами кол-во секунд будет общ. кол-во минут и секунд:<b> ${resultMinutes} мин и ${partSeconds} секунд</p>`)
+
+    </script>
+</body>
+
+</html>

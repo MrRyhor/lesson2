@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let seconds = parseInt(prompt('Введите количиство секунд прошедших с начала суток:', '0'))
+
+        let minutes = Math.floor(seconds / 60)
+
+        let hours = Math.floor(minutes / 60)
+
+        document.write(`<p>Прошло кол-во полных часов: ${hours}</p>`)
+        document.write(`<p>Прошло кол-во полных минут: ${minutes}</p>`)
+    </script>
+</body>
+
+</html>

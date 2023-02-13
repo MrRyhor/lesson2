@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let centsOfTwo = parseInt(prompt('Ведите кол-во 2-хкопеечных монет:', '0'))
+        let centsOfFive = parseInt(prompt('Ведите кол-во 5-хкопеечных монет:', '0'))
+        let centsOfTwenty = parseInt(prompt('Ведите кол-во 20-тикопеечных монет:', '0'))
+
+        let allOfCents = centsOfTwo * 2 + centsOfFive * 5 + centsOfTwenty * 20
+
+        let integerUAH = Math.floor(allOfCents / 100)
+
+        let centsUAH = allOfCents % 100
+
+        document.write(`<b>Это эквивалентно:</b> ${integerUAH} гривен ${centsUAH} копеек`)
+
+    </script>
+</body>
+
+</html>

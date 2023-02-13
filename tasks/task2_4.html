@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Возраст ребёнка, лет</th>
+                <th>Через сколько пойдёт в сад, лет</th>
+                <th>Через сколько пойдёт в школу, лет</th>
+                <th>Через сколько закончит школу, лет</th>
+                <th>Через сколько пойдёт в универ, лет</th>
+                <th>Через сколько закончит универ, лет</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="item1"></td>
+                <td id="item2"></td>
+                <td id="item3"></td>
+                <td id="item4"></td>
+                <td id="item5"></td>
+                <td id="item6"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        let childAge = parseFloat(prompt('Ввести возраст ребёнка:', '0.0'))
+        const PRESCHOOL_START = 2
+        const SCHOOL_START = 6
+        const SCHOOL_END = 17
+        const UNIVERSITY_START = 17
+        const UNIVERSITY_END = 22
+
+        let preschoolStart = PRESCHOOL_START - childAge
+        let schoolStart = SCHOOL_START - childAge
+        let schoolEnd = SCHOOL_END - childAge
+        let universitytStart = UNIVERSITY_START - childAge
+        let universitytEnd = UNIVERSITY_END - childAge
+
+        item1.innerHTML = `${childAge.toFixed(2)}`
+        item2.innerHTML = `${preschoolStart.toFixed(2)}`
+        item3.innerHTML = `${schoolStart.toFixed(2)}`
+        item4.innerHTML = `${schoolEnd.toFixed(2)}`
+        item5.innerHTML = `${universitytStart.toFixed(2)}`
+        item6.innerHTML = `${universitytEnd.toFixed(2)}`
+    </script>
+</body>
+
+</html>

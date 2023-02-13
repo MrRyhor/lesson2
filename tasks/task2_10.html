@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cents = parseInt(prompt('Ввести количество копеек:', '0'))
+
+        let integerUAH = Math.floor(cents / 100)
+
+        let centsUAH = cents % 100 // остаток от деления
+
+        document.write(`Что эквивалентно: ${integerUAH} гривен ${centsUAH} копеек`)
+    </script>
+</body>
+
+</html>

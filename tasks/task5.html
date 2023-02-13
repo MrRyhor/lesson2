@@ -18,14 +18,13 @@
         let numbersOfSeconds = parseInt(prompt('Введите количество секунд прошедших от начала суток, сек:', '0'))
 
         // находим значения выражений
-        let numbersOfMinutes = numbersOfSeconds / 60
+        let numbersOfHours = Math.floor(numbersOfSeconds / 3600)
 
-        let numbersOfHours = numbersOfMinutes / 60
+        let numbersOfMinutes = numbersOfSeconds % 3600
 
         // выводим значения переменных на экран
-        document.write(`<h3>Кол-во минут прошедших от начала суток, мин.: ${numbersOfMinutes.toFixed(3)}</h3>`)
+        document.write(`<b>Кол-во времени прошедшее от начала суток: ${numbersOfHours} часов ${numbersOfMinutes} минут</b>`)
 
-        document.write(`\n <h3>Кол-во часов прошедших от начала суток, час.: ${numbersOfHours.toFixed(3)}</h3>`)
     </script>
 </body>
 

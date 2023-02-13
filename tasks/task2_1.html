@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let screenWidth = parseFloat(prompt('Введите ширинц экрана в px:', 0))
+
+        let screenElements = parseInt(prompt('Введте кол-во элементов которые нужно разместить по всей ширине экрана, шт:', 0))
+
+        let elementWidth = Math.floor(screenWidth / screenElements)
+
+        document.write(`<h3>Ширина 1-го эл-та: ${elementWidth} px</h3>`)
+    </script>
+</body>
+
+</html>
