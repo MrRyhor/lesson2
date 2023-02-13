@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Задача 6</h1>
+
+    <h2>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо
+        та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</h2>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!-- создаём таблицу без border с оглавлением h3 -->
+    <h3>ЧЕК № 0001</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td id="price1"></td>
+                <td id="qnt1"></td>
+                <td id="cost1"></td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td id="price2"></td>
+                <td id="qnt2"></td>
+                <td id="cost2"></td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td id="price3"></td>
+                <td id="qnt3"></td>
+                <td id="cost3"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Общая стоимость</td>
+                <td></td>
+                <td></td>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <style>
+        /* центрируем элементы */
+        h3 {
+            text-align: center;
+        }
+
+
+        table {
+            margin: 0 auto;
+        }
+    </style>
+
+    <script>
+        // вводим значения переменных с экрана
+        let itemQuantity1 = parseInt(prompt('Введите количество товара №1, шт.', '0'))
+
+        let itemQuantity2 = parseInt(prompt('Введите количество товара №2, шт.', '0'))
+
+        let itemQuantity3 = parseInt(prompt('Введите количество товара №3, шт.', '0'))
+
+        // задаём значения переменным
+        let itemPrice1 = 1.2
+
+        let itemPrice2 = 2.4
+
+        let itemPrice3 = 1.8
+
+        // вносим значения переменных в соответствующие ячейки таблицы
+        qnt1.innerHTML = `${itemQuantity1}`
+
+        qnt2.innerHTML = `${itemQuantity2}`
+
+        qnt3.innerHTML = `${itemQuantity3}`
+
+        price1.innerHTML = `${itemPrice1}`
+
+        price2.innerHTML = `${itemPrice2}`
+
+        price3.innerHTML = `${itemPrice3}`
+
+        // находим значения выражений
+        let itemCost1 = itemPrice1 * itemQuantity1
+
+        let itemCost2 = itemPrice2 * itemQuantity2
+
+        let itemCost3 = itemPrice3 * itemQuantity3
+
+        // вносим значения переменных в соответствующие ячейки таблицы
+        cost1.innerHTML = `${itemCost1.toFixed(2)}`
+
+        cost2.innerHTML = `${itemCost2.toFixed(2)}`
+
+        cost3.innerHTML = `${itemCost3.toFixed(2)}`
+
+        // находим значения выражений
+        let totalCost = itemCost1 + itemCost2 + itemCost3
+
+        // вносим значения переменной в соответствующую ячейку таблицы
+        total.innerHTML = `${totalCost.toFixed(2)}`
+
+
+
+    </script>
+</body>
+
+</html>

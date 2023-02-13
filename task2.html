@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Задача 2</h1>
+
+    <h2>Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.</h2>
+
+    <script>
+        // вводим значение переменной с экрана
+        let birthYear = parseInt(prompt('Введите год рождения:', 'YYYY'))
+
+        const BIRHT_DATE = '1 января'
+
+        // вводим значение переменной с экрана
+        let thisYear = parseInt(prompt('Введите текущий год:', 'YYYY'))
+
+        // находим значение вражения
+        let yearsOld = thisYear - birthYear
+
+        // выводим значение переменной на экран
+        document.write(`<h3>Количество полных лет: ${yearsOld}</h3>`)
+
+    </script>
+</body>
+
+</html>

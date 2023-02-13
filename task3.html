@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Задача 3</h1>
+
+    <h2>Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).</h2>
+
+    <!-- создаём таблицу в html -->
+    <table border="1">
+        <tr>
+            <th>Товар</th>
+            <th>Цена, $</th>
+            <th>Кол-во, шт.</th>
+            <th>Стоимость, $</th>
+            <th>НДС 5%, $</th>
+        </tr>
+        <tr>
+            <td id="item1">Item</td>
+            <td id="item2"></td>
+            <td id="item3"></td>
+            <td id="item4"></td>
+            <td id="item5"></td>
+        </tr>
+    </table>
+
+    <script>
+        // вводим значения переменных с экрана
+        let priceItem = parseFloat(prompt('Введите цену товара, $:', '0.0'))
+
+        let quantityItem = parseInt(prompt('Введите кол-во товара, шт.:', '0'))
+
+        // находим значения выражений
+        let costItem = priceItem * quantityItem
+
+        let vatCostItem = costItem * 5 / 100
+
+        // записываем значения переменных в соответствующие ячейки таблицы
+        item2.innerHTML = `${priceItem}`
+        item3.innerHTML = `${quantityItem}`
+        item4.innerHTML = `${costItem}`
+        item5.innerHTML = `${vatCostItem}`
+
+    </script>
+</body>
+
+</html>

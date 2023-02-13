@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Задача 1</h1>
+
+    <h2>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці
+    </h2>
+    <!-- создаём таблицу в html -->
+    <table border="1">
+        <tr>
+            <th id="head1">Число X</th>
+            <th id="head2">Число Y</th>
+            <th id="head3">Cумма чисел</th>
+            <th id="head4">Произведение чисел</th>
+            <th id="head5">Деление чисел</th>
+        </tr>
+        <tr>
+            <td id="item1"></td>
+            <td id="item2"></td>
+            <td id="item3"></td>
+            <td id="item4"></td>
+            <td id="item5"></td>
+        </tr>
+    </table>
+    <script>
+        // вводим значения переменных с экрана
+        let x = parseFloat(prompt(`Введите дробное число x=`, `0`))
+
+        let y = parseFloat(prompt(`Введите дробное число y=`, `0`))
+
+        // вставляем значения переменных в соответствующие ячейки таблицы
+        item1.innerHTML = `${x}`
+
+        item2.innerHTML = `${y}`
+
+        // находим сумму переменных
+        let sumXY = x + y
+
+        //находим произведение переменных
+        let multipXY = x * y
+
+        // находим результат деления переменных
+        let divisionXY = x / y
+
+        // вставляем значения переменных в соответствующие ячейки таблицы
+        item3.innerHTML = `${sumXY}`
+
+        item4.innerHTML = `${multipXY.toFixed(2)}`
+
+        item5.innerHTML = `${divisionXY.toFixed(2)}`
+
+    </script>
+</body>
+
+</html>
